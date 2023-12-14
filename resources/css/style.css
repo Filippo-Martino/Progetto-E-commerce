@@ -1,0 +1,492 @@
+/* file css */
+:root{
+    --main: #f8f8f8;
+    --sec: #FDF6EE;
+    --ter: #7F9C48;
+    --acc: #001d3d;
+    --fm: #ffffff;
+    --lk: #02264c;
+    --icn: rgba(231, 231, 231, 0.588);
+    --bga: rgba(103, 103, 103, 0.811);
+    --bra: #017185;
+    --ft: 'Montserrat', sans-serif;
+    
+}
+
+body{
+    background-color: var(--main);
+    font-family: var(--ft);
+}
+
+/* Header */
+header{
+  height: 500px;
+  background:linear-gradient(to top, #f8f8f8 4%, transparent 20%) ,url(/public/img/header.jpeg) ;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.altezza{
+  height: 500px;
+}
+.logoPresto{
+  width: 20%;
+}
+@media (max-width:500px) {
+  header{
+    height: 250px;
+    background: linear-gradient(to top, #f3f3f3 1%, transparent 15%), url(/public/img/header.jpeg);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .altezza{
+    height: 250px;
+  }
+  .logoPresto{
+    width: 30%;
+  }
+}
+
+
+main{
+    min-height: 85vh;
+}
+/* ******************** NAVBAR ****************************** */
+.navbar-custom{
+    background-color: var(--acc);
+}
+/* colore barra di ricerca */
+.form-control-search{
+  background-color: var(--icn);
+}
+.form-control-search::placeholder{
+color: #1A1A1A;
+}
+.dropdown-toggle:after {
+  content: none
+}
+/* END NAVBAR */
+/* ******************** AREA PERSONALE ****************************** */
+
+/* aerea personale */
+.dropdown-menu-custom{
+  background-color: var(--bga) ;
+}
+.notifica{
+  top:5px !important;
+}
+.notifica-toggle{
+  top:13px;
+  right:-13px
+}
+/* area login */
+.box{
+  padding: 50px 0px 100px 0px;
+  background-color: var(--fm);
+  color: var(--lk);
+}
+.form-control-custom{
+width: 80%;
+}
+.form-control-custom2{
+  width: 60%;
+}
+.form-label-custom{
+  width: 60%;
+}
+.form-select-custom{
+  width: 80%;
+}
+/* remove counter number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* colore link */
+a{
+  color: black;
+}
+form p{
+  color: black;
+}
+/* END AREA PERSONALE */
+/* ********************  PAGINA VENDI - FORM ARTICLE CREATE ****************************** */
+
+.img-preview{
+  min-height:400px;
+  max-height:1000px;
+  width:100%;
+  background-size: cover;
+  background-position:center;
+}
+
+/* END  PAGINA VENDI - FORM ARTICLE CREATE */
+
+/* ********************  HOMEPAGE ****************************** */
+
+/* titolo Presto */
+header h1{
+    font-family: var(--ft);
+    font-size: 4rem;
+    font-weight: 500;
+}
+/* SWIPER icone categorie homepage*/
+
+ 
+.swiper-categories {
+  width: 100%;
+  height: 100%;
+}
+/* category-fa si riferisce all'icona nella pagina delle categorie */
+.swiper-categories-slide , .category-fa{
+  text-align: center;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-categories-next, .swiper-button-latest-next
+{
+  color:  #001d3d66;
+  transition: 0.5s;
+}
+
+.swiper-button-categories-prev, .swiper-button-latest-prev
+{
+  color:  #001d3d66;
+  transition: 0.5s;
+}
+.swiper-button-categories-next:hover,.swiper-button-latest-next:hover
+ {
+  color: var(--acc);
+  scale: 1.4;
+  transition: 0.7s;
+}
+
+.swiper-button-categories-prev:hover, .swiper-button-latest-prev:hover
+ {
+  color: var(--acc);
+  scale: 1.4;
+  transition: 0.7s;
+}
+.mobile{
+  /* position: relative; */
+  /* top: -20px; */
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%)
+  }
+.icon{
+  padding: 25px;
+  height: 145px;
+  width: 145px;
+  }
+.icon:hover{
+  
+  scale: 1.2;
+  transition: 0.6s;
+  
+  }
+.swiper-categories-wrapper{
+  height: 175px;
+  }
+  
+
+
+@media (max-width: 760px) {
+  .swiper-button-categories-next, .swiper-button-latest-next {
+    right: 20px;
+    display: none;
+  }
+
+  .swiper-button-categories-prev, .swiper-button-latest-prev {
+    left: 20px;
+    display: none;
+  }
+  
+  .mobile{
+    font-size: 50px;
+  }
+  .icon{
+    padding: 0px !important;
+    height: 100px !important;
+    width: 100px !important;
+  }
+}
+
+.namecategory{
+  font-weight: 600;
+}
+
+
+/* END SWIPER icone categorie homepage*/
+
+
+/* **SWIPER ULTIMI ARTICOLI HOMEPAGE */
+.mySwiper-latest {
+  width: 100%;
+  height: 100%;
+}
+.slide-home{
+  width:90%;
+}
+
+/* END HOMEPAGE */
+
+/* ******************** CARD ****************************** */
+.brand{
+  color: var(--bra);
+}
+/* Ombra Card */
+.shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.shadow-custom{
+  box-shadow: rgba(50, 50, 52, 0.593) 0px 7px 29px 0px;
+}
+.card-title-text{
+  width:100%;
+  overflow: hidden;
+  display:inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Link Card */
+.card-body a{
+  text-decoration: none !important;
+
+}
+
+/* Button */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 40px;
+  min-width: 70%;
+  outline: none;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 50%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+/* End Button */
+/* Button */
+.button-28-custom 
+{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--lk);
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: var(--lk);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 40px;
+  min-width: 0;
+  outline: none;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 50%;
+  will-change: transform;
+}
+
+.button-28-custom:disabled 
+{
+  pointer-events: none;
+}
+
+.button-28-custom:hover
+{
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28-custom:active 
+{
+  box-shadow: none;
+  transform: translateY(0);
+}
+.buttoncustom
+{
+  width: 20%;
+}
+@media (max-width: 760px) 
+{
+  .buttoncustom
+  {
+    width: 40%;
+  }
+}
+/* End Button */
+
+/* carosello dettaglio custom */
+.carousel-custom{
+  height: 400px;
+  width: 400px;
+}
+/* Article show */
+
+.safepayment{
+  background-color: #9e9e9e25;
+}
+
+
+
+/* personalizzazione PAGINATOR */
+.page-link.active, .active > .page-link{
+  background-color: var(--acc) !important;
+}
+.page-link.active, .active > .page-link {
+  border-color: #000000;
+}
+.page-link{
+  color: black;
+}
+
+
+
+
+
+/* **SWIPER PRODOTTI CORRELATI PER CATEGORIA */
+.mySwiper-correlati {
+  width: 100%;
+  height: 100%;
+}
+
+
+.slide-correlati {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-correlati img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* *END SWIPER */
+/* ******************** PAGINA REVISORE ****************************** */
+
+.offcanvasCustom
+{
+  display: none;
+}
+.buttonRevisor
+{
+  display: block;
+  display: flex;
+}
+@media (max-width: 760px)
+{
+  .offcanvasCustom
+{
+  display: block;
+}
+.buttonRevisor
+{
+  display: none;
+}
+}
+/* aboutUs */
+.aboutus{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background:linear-gradient(to top, #001D3D  0%, transparent 20%),url(/public/img/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  -webkit-text-stroke: 0.3px black;
+}
+@media (max-width: 700px) {
+  .aboutus{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background:linear-gradient(to top, #001D3D  0%, transparent 20%),linear-gradient(rgba(0, 0, 0, 0.369),rgba(0, 0, 0, 0.847)),url(/public/img/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    -webkit-text-stroke: 0.2px black;
+  }
+ 
+}
+@media (max-width: 1200px) {
+  .aboutus{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background:linear-gradient(to top, #001D3D  0%, transparent 20%),linear-gradient(rgba(0, 0, 0, 0.369),rgba(0, 0, 0, 0.774)),url(/public/img/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    -webkit-text-stroke: 0.2px black;
+  }
+}
+
+/* *END pagina revisore */
+
+/* ******************** FOOTER ****************************** */
+
+.footer{
+    background-color: var(--acc);
+    color: aliceblue;
+}
+.footer a{
+    color: aliceblue;
+}
